@@ -9,7 +9,6 @@ public class StatsService {
         return sum;
     }
 
-
     public long averageSales(long[] sales) {
         long sumSales = sumSales(sales);
         long average = sumSales/sales.length;
@@ -29,7 +28,6 @@ public class StatsService {
 
     }
 
-
     public int minSales(long[] sales) {
         int minMonth = 0;
         int month = 0;
@@ -42,9 +40,6 @@ public class StatsService {
         return minMonth + 1;
     }
 
-
-
-
     public int belowAverage (long[] sales){
         int belowMonth = 0;
         long average = averageSales(sales);
@@ -56,7 +51,6 @@ public class StatsService {
             return belowMonth;
         }
 
-
      public int aboveAverage ( long[] sales){
         int aboveAverage = 0;
         long average = averageSales(sales);
@@ -65,9 +59,7 @@ public class StatsService {
                 aboveAverage++;
             }
             return aboveAverage;
-
      }
-
 }
 
 
